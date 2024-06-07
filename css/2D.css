@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    }
+    table {
+    border-collapse : collapse;
+    }
+
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 28px;
+    }
+    .example .grid-item {
+        overflow: hidden;
+    }
+    .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .left {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 10;
+        margin: 30px 90px 0 50px;
+    }
