@@ -26,6 +26,7 @@
         height: 100%;
         margin: auto;
         overflow: hidden;
+        z-index: -2;
       }
       .image-container {
         display: flex;
@@ -80,9 +81,12 @@
       /* 로고 슬라이드 시작 */
 
     /* reset */
-section .logo-slides { width: 100%;}
-li { display: inline-block; 
-    list-style: none; 
+section .logo-slides {
+   width: 100%;
+  }
+li { 
+  display: inline-block; 
+  list-style: none; 
 }
 
 /* 슬라이드 */
@@ -91,7 +95,8 @@ li { display: inline-block;
     position: relative; 
     top: 0; 
     left: 0; 
-    overflow: hidden;  
+    overflow: hidden;
+    z-index: -2;
 }
 .slideWrap .imgSlide { 
     height: 100%;
