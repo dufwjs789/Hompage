@@ -120,11 +120,11 @@ table {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items:flex-start;
     margin-bottom: 90px;
 }
 .map-menu .map {
-    width: 45%;
+    width: 800px;
+    height: 500px;
     position: relative;
     float: left;
     margin-right: 50px;
@@ -146,8 +146,8 @@ table {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 .map-menu .about {
-    margin-top: 260px;
-    display: inline-block;
+    width: 220px;
+    margin-top: 170px;
     padding: 10px 45px;
     background-color: #32A3DB;
     border-radius: 30px;
@@ -180,13 +180,33 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+.info-container h4, h3 {
+    margin-top: 90px;
+}
+.info-container h4 {
+    font-size: 22px;
+}
+.info-container h3 {
+    font-size: 26px;
+}
+.info-container .box-2 p {
+    font-size: 15px;
+    margin-bottom: 7px;
 }
 .info-box {
-    width: 300px;
+    width: 400px;
     height: 300px;
 }
 .info-box img {
     float: right;
+    margin: 90px 50px 0 0;
+}
+.info-container .box-1 a {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: white;
 }
 
 /* info 끝 */
