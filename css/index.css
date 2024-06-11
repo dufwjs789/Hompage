@@ -28,7 +28,9 @@ table {
 .menu-container img {
     max-width: 100%; /* 이미지 최대 너비를 부모 요소에 맞춤 */
     height: auto; /* 이미지 높이를 자동으로 조절하여 비율 유지 */
-    margin: 0 10px; /* 이미지 사이 간격 조절 */
+  }
+  .menu-container a {
+    margin: 10px;
   }
 
 /* 메인 메뉴 끝 */
