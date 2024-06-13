@@ -21,13 +21,86 @@
 
 <!--말풍선 시작-->
 <section class="balloon">
-  <div class="ball_container">
-    <div class="ball_img">
-      <a href="">
-        <img src="img/말풍선.png" alt="">
-      </a>
+
+  <input type="checkbox" id="popup">
+  <label for="popup"><img src="img/bob.png" alt=""></label>
+  <div>
+    <div>
+      <label for="popup">
+
+        <div class="bob_first">
+          <p>문의</p>
+        </div>
+
+        <div>
+          <label for="username">이름  </label>
+          <input type="text" id="username" name="username" required="required" minlength="2" maxlength="20" placeholder="이름, 기업명, 단체명 등을 입력해 주십시오.">
+        </div>
+
+        <div>
+          <span>범주</span>
+          <input type="checkbox">
+          <span>2D</span>
+          <input type="checkbox">
+          <span>3D</span>
+          <input type="checkbox">
+          <span>홈페이지</span>
+        </div>
+
+        <div>
+          <label for="title">제목  </label>
+          <input type="text" id="title" name="title" required="required" minlength="3" maxlength="20" placeholder="20자 이내로 필요작업 및 범주를 알 수 있도록 함께 기입하여 주십시오.">
+        </div>
+
+        <div>
+          <label for="phone">전화  </label>
+          <input type="text" id="phone" name="phone" required="required" placeholder="010-0000-0000">
+          <label for="mail">이메일  </label>
+          <input type="text" id="mail" name="mail" required="required" placeholder="contact@intdesignmakers.com">
+        </div>
+
+        <div>
+          <span>연락</span>
+          <input type="checkbox">
+          <span>전화</span>
+          <input type="checkbox">
+          <span>문자</span>
+          <input type="checkbox">
+          <span>메일</span>
+        </div>
+
+        <div>
+          <span>마감</span>
+        </div>
+
+        <div>
+          <label for="money">예산  </label>
+          <input type="text" id="money" name="money" required="required" minlength="3" maxlength="20" placeholder="대략적인 예산을 기입하여 주시고, 미정 시 0으로 기입하여 주십시오.">
+        </div>
+
+        <div>
+          <label for="content">내용  </label>
+          <input type="text" id="content" name="content" required="required" minlength="3" maxlength="20" placeholder="상세 내용을 기입하여 주십시오. 해당 내용을 참조하여 기입해 주십시오.">
+        </div>
+
+        <div>
+          <input type="checkbox"><span>[필수] 서비스 이용약관 동의</span><br>
+          <input type="checkbox"><span>[필수] 개인정도 수집 및 이용 동의</span><br>
+          <input type="checkbox"><span>[필수] 민감정보 수집 및 이용 동의</span><br>
+          <input type="checkbox"><span>[선택] 마케팅 및 광고성 정보 수신 동의</span><br>
+          <input type="checkbox"><span>위와 같이 개인정보를 수집 • 이용하는데 동의 하십니까?</span>
+        </div>
+
+        <div>
+          <button>취소하기</button>
+          <button>제출하기</button>
+        </div>
+
+      </label>
     </div>
+    <label for="popup"></label>
   </div>
+
 </section>
 <!--말풍선 끝-->
 

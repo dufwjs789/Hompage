@@ -16,19 +16,63 @@ table {
     align-items: center;
 }
 
-/* 메인 메뉴 시작 */
-.ball_container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
+/* 말풍선 시작 */
+
+input[id*="popup"] {
+    display: none;
 }
-.ball_container a {
+input[id*="popup"] + label {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
     margin: 0 75px 0 0;
 }
-/* 메인 메뉴 시작 */
+input[id*="popup"] + label + div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+input[id*="popup"] + label + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+input[id*="popup"]:checked + label + div {
+    opacity: 1;
+    visibility: visible;
+}
+input[id*="popup"] + label + div > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 770px;
+    background: #fff;
+    z-index: 2;
+}
+input[id*="popup"] + label + div > label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    z-index: 1;
+}
+.bob_first {
+    font-size: 22px;
+    color: #32A3DB;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+/* 말풍선 끝 */
 
 /* 메인 메뉴 시작 */
 
